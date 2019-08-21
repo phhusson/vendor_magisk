@@ -22,7 +22,6 @@ cc_binary {
 		"Magisk/native/jni/systemproperties/system_properties.cpp",
 
 		//Magisk utils
-		"Magisk/native/jni/utils/CharArray.cpp",
 		"Magisk/native/jni/utils/file.cpp",
 		"Magisk/native/jni/utils/logging.cpp",
 		"Magisk/native/jni/utils/misc.cpp",
