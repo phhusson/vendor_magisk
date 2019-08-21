@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <mntent.h>
 
-#define getline       __getline
 #define getdelim      __getdelim
 #define setns         __setns
 #define unshare       __unshare
@@ -21,7 +20,6 @@
 
 __BEGIN_DECLS
 
-ssize_t __getline(char **lineptr, size_t *n, FILE *stream);
 ssize_t __getdelim(char **lineptr, size_t *n, int delim, FILE *stream);
 struct mntent *__getmntent_r(FILE* fp, struct mntent* e, char* buf, int buf_len);
 FILE *__setmntent(const char* path, const char* mode);
