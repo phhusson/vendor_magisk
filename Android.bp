@@ -39,4 +39,11 @@ cc_binary {
 		"Magisk/native/jni/systemproperties/include/",
 		"Magisk/native/jni/external/nanopb/",
 	],
+
+    bootstrap: true,
+    target: {
+        android: {
+            ldflags: ["-Wl,--rpath,/system/${LIB}/bootstrap"],
+         },
+    },
 }
