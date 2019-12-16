@@ -47,3 +47,18 @@ cc_binary {
          },
     },
 }
+
+cc_binary {
+	name: "patchelf",
+	srcs: [
+		"patchelf/src/patchelf.cc",
+	],
+	local_include_dirs: [
+		"patchelf/src",
+	],
+	cflags: [
+		"-DPAGESIZE=4096",
+		"-fexceptions",
+		"-DPACKAGE_STRING=\"phh-git\"",
+	],
+}
