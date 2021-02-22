@@ -1,5 +1,5 @@
 cc_binary {
-	name: "resetprop",
+	name: "resetprop_phh",
 	srcs: [
 		//nanopb
 		"Magisk/native/jni/external/nanopb/pb_common.c",
